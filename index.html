@@ -36,7 +36,7 @@
           <ul class="nav navbar-nav">
             <li ui-sref-active="active"ui-sref-active="active"><a ui-sref="home">Home</a></li>
             <li ui-sref-active="active"><a ui-sref="quizzes">Quizes</a></li>
-            <li ui-sref-active="active"><a href="#/teams">Teams</a></li>
+            <li ui-sref-active="active"><a ui-sref="teams">Teams</a></li>
             <li ui-sref-active="active"><a href="#/admin">Admin</a></li>
             <li ui-sref-active="active"><a ui-sref="login" ng-if="!user" class="ng-cloak">Login</a></li>
             <li><a ng-click="logout()" ng-if="user" class="ng-cloak">logout</a></li>
@@ -90,6 +90,8 @@
       <script src="app/controller/newQuizCtrl.js"></script>
       <script src="app/controller/appCtrl.js"></script>
       <script src="app/controller/profileCtrl.js"></script>
+      <script src="app/controller/teamsCtrl.js"></script>
+      <script src="app/controller/newTeamCtrl.js"></script>
       <script src="app/services/firebase.js"></script>
       <script src="app/services/auth.js"></script>
   </body>

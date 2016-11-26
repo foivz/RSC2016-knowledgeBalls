@@ -7,10 +7,23 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/home.html',
     controller: 'HomeCtrl'
   }
-
+  var teamsState = {
+    name: 'teams',
+    url: '/teams',
+    cache: false,
+    templateUrl: 'templates/teams.html',
+    controller: 'TeamsCtrl'
+  }
+  var newTeamState = {
+    name: 'newteam',
+    url: '/newteam',
+    templateUrl: 'templates/newteam.html',
+    controller: 'NewTeamCtrl'
+  }
   var quizesState = {
     name: 'quizzes',
     url: '/quizzes',
+    cache: false,
     templateUrl: 'templates/quizes.html',
     controller: 'QuizzesCtrl'
   }
@@ -34,6 +47,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     controller: 'ProfileCtrl'
   }
   $stateProvider.state(homeState);
+  $stateProvider.state(teamsState);
+  $stateProvider.state(newTeamState);
   $stateProvider.state(quizesState);
   $stateProvider.state(newQuizState);
   $stateProvider.state(loginState);
