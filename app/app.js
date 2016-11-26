@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router', 'firebase']);
+var myApp = angular.module('myApp', ['ui.router', 'firebase', 'ui.bootstrap', 'directives.customvalidation.customValidationTypes']);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
   var homeState = {
@@ -13,6 +13,12 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     url: '/quizzes',
     templateUrl: 'templates/quizes.html',
     controller: 'QuizzesCtrl'
+  }
+  var newQuizState = {
+      name: 'newQuiz',
+      url: '/new-quiz',
+      templateUrl: 'templates/newQuiz.html',
+      controller: 'NewQuizCtrl'
   }
   var loginState = {
     name: 'login',
@@ -29,6 +35,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   }
   $stateProvider.state(homeState);
   $stateProvider.state(quizesState);
+  $stateProvider.state(newQuizState);
   $stateProvider.state(loginState);
   $stateProvider.state(profileState);
   $urlRouterProvider.otherwise('/home');

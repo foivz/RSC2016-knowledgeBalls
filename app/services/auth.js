@@ -10,4 +10,7 @@ angular.module('myApp')
     this.getUser = function(u){
         return user;
     }
+    this.loggedIn = function(){
+        return user ? true:false;
+    }
 })

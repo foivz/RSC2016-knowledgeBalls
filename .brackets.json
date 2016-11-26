@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/var/getProto.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/var/indexOf.js"
+    ]
+}
