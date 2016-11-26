@@ -9,10 +9,10 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   }
 
   var quizesState = {
-    name: 'quizes',
-    url: '/quizes',
+    name: 'quizzes',
+    url: '/quizzes',
     templateUrl: 'templates/quizes.html',
-    controller: 'QuizesCtrl'
+    controller: 'QuizzesCtrl'
   }
   var loginState = {
     name: 'login',

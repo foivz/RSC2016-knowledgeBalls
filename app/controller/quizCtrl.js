@@ -1,4 +1,4 @@
 angular.module('myApp')
-.controller('QuizesCtrl', function($scope){
+.controller('QuizzesCtrl', function($scope){
     
 })
