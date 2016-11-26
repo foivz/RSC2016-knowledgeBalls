@@ -21,7 +21,7 @@
   </head>
 
   <body ng-app="myApp">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="AppCtrl">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,7 +38,9 @@
             <li><a href="#/quizes">Quizes</a></li>
             <li><a href="#/teams">Teams</a></li>
             <li><a href="#/admin">Admin</a></li>
-            <li><a href="#/login">Login</a></li>
+            <li><a href="#/login" ng-if="!user" class="ng-cloak">Login</a></li>
+            <li><a ng-click="logout()" ng-if="user" class="ng-cloak">logout</a></li>
+            <li><a href="#/profile" class="ng-cloak">{{user.displayName}}</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -60,10 +62,23 @@
     <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-    
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyC-npvVX-_JneQXIkfPgvklO0OXCPFA6qM",
+        authDomain: "rscknowledge-1fc23.firebaseapp.com",
+        databaseURL: "https://rscknowledge-1fc23.firebaseio.com",
+        storageBucket: "rscknowledge-1fc23.appspot.com",
+        messagingSenderId: "239029692732"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="node_modules/angularfire/dist/angularfire.min.js"></script>
       <script src="app/app.js"></script>
       <script src="app/controller/homeCtrl.js"></script>
       <script src="app/controller/loginCtrl.js"></script>
       <script src="app/controller/quizCtrl.js"></script>
+      <script src="app/controller/appCtrl.js"></script>
   </body>
 </html>
