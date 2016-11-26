@@ -1,0 +1,11 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Dev/RSC2016-knowledgeBalls/plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+        "C:/Dev/RSC2016-knowledgeBalls/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js",
+        "C:/Dev/RSC2016-knowledgeBalls/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js",
+        "C:/Dev/RSC2016-knowledgeBalls/plugins/cordova-plugin-device/src/ubuntu/device.js",
+        "C:/Dev/RSC2016-knowledgeBalls/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "C:/Dev/RSC2016-knowledgeBalls/plugins/cordova-plugin-device/src/windows/DeviceProxy.js",
+        "C:/Dev/RSC2016-knowledgeBalls/www/js/app.js"
+    ]
+}
