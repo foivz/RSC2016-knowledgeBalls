@@ -34,14 +34,14 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">Home</a></li>
-            <li><a href="#/quizzes">Quizes</a></li>
-            <li><a href="#/teams">Teams</a></li>
-            <li><a href="#/admin">Admin</a></li>
-            <li><a href="#/login" ng-if="!user" class="ng-cloak">Login</a></li>
+            <li ui-sref-active="active"ui-sref-active="active"><a ui-sref="home">Home</a></li>
+            <li ui-sref-active="active"><a ui-sref="quizzes">Quizes</a></li>
+            <li ui-sref-active="active"><a href="#/teams">Teams</a></li>
+            <li ui-sref-active="active"><a href="#/admin">Admin</a></li>
+            <li ui-sref-active="active"><a ui-sref="login" ng-if="!user" class="ng-cloak">Login</a></li>
             <li><a ng-click="logout()" ng-if="user" class="ng-cloak">logout</a></li>
-              <li>
-                  <a href="#/profile" class="ng-cloak">
+              <li ui-sref-active="active">
+                  <a ui-sref="profile" class="ng-cloak">
                      {{user.displayName}}
               </a>
             </li>
@@ -84,6 +84,7 @@
       <script src="app/controller/loginCtrl.js"></script>
       <script src="app/controller/quizCtrl.js"></script>
       <script src="app/controller/appCtrl.js"></script>
+      <script src="app/controller/profileCtrl.js"></script>
       <script src="app/services/firebase.js"></script>
       <script src="app/services/auth.js"></script>
   </body>

@@ -7,4 +7,7 @@ angular.module('myApp')
     this.removeUser = function(){
         user = null;
     }
+    this.getUser = function(u){
+        return user;
+    }
 })

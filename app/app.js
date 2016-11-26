@@ -20,9 +20,17 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/login.html',
     controller: 'LoginCtrl'
   }
+  var profileState = {
+    name: 'profile',
+    url: '/profile',
+    cache: false,
+    templateUrl: 'templates/profile.html',
+    controller: 'ProfileCtrl'
+  }
   $stateProvider.state(homeState);
   $stateProvider.state(quizesState);
   $stateProvider.state(loginState);
+  $stateProvider.state(profileState);
   $urlRouterProvider.otherwise('/home');
     
 });
