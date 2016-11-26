@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-md-12">
         <h1>Create new Quiz</h1>
-        
-        <form ng-submit="saveQuiz()">
+    
+            <div class="bg-danger">{{error}}</div>
+        <form ng-submit="saveQuiz()" novalidate>
             <div class="form-group">
                 <label>Moderator</label>
                 <span>{{user.displayName}}</span>
