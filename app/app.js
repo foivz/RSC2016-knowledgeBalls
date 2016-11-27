@@ -39,6 +39,12 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/login.html',
     controller: 'LoginCtrl'
   }
+  var quizState = {
+      name: 'quiz',
+      url: '/quiz/{id}',
+      templateUrl: 'templates/quiz.html',
+      controller: 'QuizShowCtrl'
+  }
   var profileState = {
     name: 'profile',
     url: '/profile',
@@ -51,6 +57,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state(newTeamState);
   $stateProvider.state(quizesState);
   $stateProvider.state(newQuizState);
+  $stateProvider.state(quizState);
   $stateProvider.state(loginState);
   $stateProvider.state(profileState);
   $urlRouterProvider.otherwise('/home');
