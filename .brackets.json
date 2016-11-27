@@ -2,6 +2,10 @@
     "jscodehints.detectedExclusions": [
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/var/getProto.js",
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/var/indexOf.js",
-        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/../selector.js"
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/../selector.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/queue/delay.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/../core.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/support.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/wrapMap.js"
     ]
 }

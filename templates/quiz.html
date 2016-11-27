@@ -8,3 +8,11 @@
         <span>Moderator: {{quiz.user.displayName}}</span>
     </div>
 </div>
+<div class="row" ng-if="isOwner()">
+    <div class="col-md-4">
+        <a ng-click="addQuestion()" class="btn btn-primary">Add Question</a>
+    </div>
+    <div class="col-md-4" ng-repeat="q in questions">
+        
+    </div>
+</div>

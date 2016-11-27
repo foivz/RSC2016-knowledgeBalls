@@ -1,0 +1,40 @@
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-12">
+            <form novalidate ng-submit="saveQuestion()">
+                <div class="form-group">
+                    <label>Question:</label>
+                    <input type="text" class="form-control" ng-model="new.question">
+                </div>
+                <div class="form-group">
+                    <label>A:</label>
+                    <input type="text" class="form-control" ng-model="new.a">
+                </div>
+                <div class="form-group">
+                    <label>B:</label>
+                    <input type="text" class="form-control" ng-model="new.b">
+                </div>
+                <div class="form-group">
+                    <label>C:</label>
+                    <input type="text" class="form-control" ng-model="new.c">
+                </div>
+                <div class="form-group">
+                    <label>D:</label>
+                    <input type="text" class="form-control" ng-model="new.d">
+                </div>
+                <div class="form-group">
+                    <label>Correct:</label>
+                    <select name="singleSelect" ng-model="new.correct">
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                      <option value="D">D</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Save Question</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
