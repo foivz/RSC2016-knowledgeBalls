@@ -7,7 +7,8 @@
     "angular": "^1.5.9",
     "angular-ui-bootstrap": "^2.3.0",
     "angular-ui-form-validation": "^2.1.2",
-    "angular-ui-router": "^0.3.2"
+    "angular-ui-router": "^0.3.2",
+    "firebase": "^3.6.1"
   },
   "devDependencies": {},
   "scripts": {
