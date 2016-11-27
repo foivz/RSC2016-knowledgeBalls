@@ -21,6 +21,7 @@ angular.module('myApp')
     
     $scope.isOwner = function(){
         if($scope.quiz == null){return false;}
+        if(Auth.getUser() == null){return false;}
         if($scope.quiz.moderator == Auth.getUser().uid){
             return true;
         }
@@ -55,15 +56,15 @@ angular.module('myApp')
             return false;
         }
         var p = {
-            id: id
+            quiz: id,
+            user: Auth.getUser().uid
         };
         $uibModal.open({
           templateUrl: 'templates/selectTeam.html',
           size: 'sm',
           controller: 'SelectTeamCtrl',
           resolve: {
-              quiz: p,
-              user: Auth.getUser().uid
+              p: p
           }
         });
     }

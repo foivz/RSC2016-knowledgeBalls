@@ -6,6 +6,8 @@
         <span>{{quiz.startsAt | date:"MM/dd/yyyy 'at' hh:mm"}}</span>
         <br>
         <span>Moderator: {{quiz.user.displayName}}</span>
+        <br>
+        <a ng-click="joinTeam()" class="btn btn-primary" ng-if="loggedIn() && !isOwner()">Join as Team</a>
     </div>
 </div>
 <div class="row" ng-if="isOwner()">

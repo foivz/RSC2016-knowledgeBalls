@@ -7,6 +7,8 @@
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/../core.js",
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/support.js",
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/wrapMap.js",
-        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/_evalUrl.js"
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/_evalUrl.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/buildFragment.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/getAll.js"
     ]
 }
