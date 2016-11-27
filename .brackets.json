@@ -9,6 +9,10 @@
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/wrapMap.js",
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/_evalUrl.js",
         "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/buildFragment.js",
-        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/getAll.js"
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/getAll.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/manipulation/setGlobalEval.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/var/dir.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/var/rneedsContext.js",
+        "C:/Dev/RSC2016-knowledgeBalls/bower_components/jquery/src/traversing/var/siblings.js"
     ]
 }

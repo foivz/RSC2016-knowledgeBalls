@@ -18,7 +18,13 @@ angular.module('myApp')
         console.log($scope.quiz);
         $scope.$apply();
     });
-    
+    firebase.database().ref('quiz/'+id+'/teams').on('child_added', function(t){
+        firebase.database().ref('teams/'+t.key).once('value', function(t2){
+           $scope.teams.push(t2.val());
+            $scope.$digest();
+            console.log(t2.val());
+        });
+    });
     $scope.isOwner = function(){
         if($scope.quiz == null){return false;}
         if(Auth.getUser() == null){return false;}
