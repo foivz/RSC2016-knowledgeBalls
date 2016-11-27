@@ -49,4 +49,22 @@ angular.module('myApp')
         $scope.questions.push(quest.val());
         //$scope.$apply();
     })
+    
+    $scope.joinTeam = function(){
+       if($scope.isOwner()){
+            return false;
+        }
+        var p = {
+            id: id
+        };
+        $uibModal.open({
+          templateUrl: 'templates/selectTeam.html',
+          size: 'sm',
+          controller: 'SelectTeamCtrl',
+          resolve: {
+              quiz: p,
+              user: Auth.getUser().uid
+          }
+        });
+    }
 })

@@ -39,7 +39,8 @@ angular.module('myApp')
         $scope.error  ='';
         var team  = {
             title: $scope.new.title,
-            members: {}
+            members: {},
+            owner: Auth.getUser().uid
         };
         for(var i = 0; i < $scope.new.members.length; i++){
             team.members[$scope.new.members[i]] = true;
