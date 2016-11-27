@@ -7,7 +7,7 @@
     <div class="col-md-4" ng-repeat="q in quizes">
         <h5>{{q.title}}</h5>
         <span>{{q.startsAt | date:"MM/dd/yyyy 'at' hh:mm"}}</span>
-        <hr>
+        <br>
         {{q.description}}<br>
         <a href="#/quiz/{{q.key}}">Join..</a>
     </div>
