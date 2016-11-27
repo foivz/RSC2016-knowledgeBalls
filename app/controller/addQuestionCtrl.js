@@ -10,12 +10,12 @@ angular.module('myApp')
     }
     
     $scope.saveQuestion = function(){
-        if($scope.new.question || $scope.new.a || $scope.new.b || $scope.new.c || $scope.new.d || $scope.new.correct){
+        if($scope.new.question == '' || $scope.new.a == '' || $scope.new.b == '' || $scope.new.c == '' || $scope.new.d == '' || $scope.new.correct == ''){
             $scope.error = 'You haven\'t entered everything';
             return;
         }  
         $scope.error = '';
-        firebase.database().ref('questions/'+id).push($scope.new);
+        firebase.database().ref('questions/'+quiz.id).push($scope.new);
         $scope.$close();
     };
 })

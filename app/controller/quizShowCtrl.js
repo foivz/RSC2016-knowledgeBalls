@@ -31,17 +31,22 @@ angular.module('myApp')
         if(!$scope.isOwner()){
             return false;
         }
+        var p = {
+            id: id
+        };
         $uibModal.open({
           templateUrl: 'templates/addQuestion.html',
           size: 'sm',
           controller: 'AddQuestionCtrl',
           resolve: {
-              quiz: id
+              quiz: p
           }
         });
     }
     
     firebase.database().ref('questions/'+id).on('child_added', function(quest){
+        console.log(quest);
         $scope.questions.push(quest.val());
+        //$scope.$apply();
     })
 })

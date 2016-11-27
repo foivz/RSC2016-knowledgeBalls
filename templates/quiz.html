@@ -13,6 +13,11 @@
         <a ng-click="addQuestion()" class="btn btn-primary">Add Question</a>
     </div>
     <div class="col-md-4" ng-repeat="q in questions">
-        
+        <h1>{{q.question}}</h1>
+        <span>A: {{q.a}}</span>
+        <span>B: {{q.b}}</span>
+        <span>C: {{q.c}}</span>
+        <span>D: {{q.d}}</span>
+        <i>Correct: {{q.correct}}</i>
     </div>
 </div>
